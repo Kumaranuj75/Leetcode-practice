@@ -6,6 +6,12 @@
 
 // You can return the answer in any order.
 
+#include<iostream>
+#include<vector>
+#include <unordered_map>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& arr, int tar) {
