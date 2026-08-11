@@ -30,3 +30,15 @@
 #include <algorithm>
 using namespace std;
 
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+      int n = nums.size();
+      vector<vector<int>> ans;
+
+      sort(nums.begin(), nums.end());
+
+      for(int i=0; i<n; i++){
+        if(i>0 && nums[i] == nums[i-1]) continue;
+
+        int j = i+1, k = n-1;
